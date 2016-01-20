@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/primary_dark_material_dark"
+    tools:context=".ModernArtUIActivity">
+
+    <SeekBar android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:progress="1"
+        android:max="255"/>
+
+    <TextView android:id="@+id/center_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="2dp" />
+
+    <TextView android:id="@+id/bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/center_view"
+        android:layout_marginBottom="50dp" />
+
+    <TextView android:id="@+id/left_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/center_view"
+        android:layout_above="@+id/bottom_view"
+        android:layout_marginBottom="2dp" />
+
+    <TextView android:id="@+id/top_of_center_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/center_view"
+        android:layout_toRightOf="@+id/left_view"
+        android:layout_toLeftOf="@+id/right_view"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp" />
+
+    <TextView android:id="@+id/right_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/center_view"
+        android:layout_above="@+id/bottom_view"
+        android:layout_alignTop="@+id/top_of_center_view"
+        android:layout_marginBottom="2dp" />
+
+    <TextView android:id="@+id/top_center_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/top_of_center_view"
+        android:layout_toLeftOf="@+id/right_view"
+        android:layout_toRightOf="@+id/left_view"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp" />
+
+    <TextView android:id="@+id/top_right_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/right_view"
+        android:layout_toRightOf="@+id/top_center_view"
+        android:layout_marginBottom="2dp" />
+
+</RelativeLayout>
+
+
