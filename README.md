@@ -2,8 +2,8 @@
 
 ##What is it?
 
-This is an Android app that that shows a modern art image inspired by 
-an artwork in the Museum Of Modern Art, New York.
+This is an Android app that that displays a modern art image inspired by 
+an artwork in collections of the Museum Of Modern Art, New York.
 
 ##Platform and Libraries Used
 
